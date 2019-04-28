@@ -1,0 +1,9 @@
+One of my favorite video game visual effect's is Karthus' "Lay Waste" ability in League of Legends. It consists of a ball of magic which grows and then explodes, as well a hitbox indicator on the ground. You can see the effect in the Screenshots folder. I like this effect because it feels very distinctly magical, but I don't really know much about particles so I can only speculate as to how it was made. I imagine it was done with a custom particle-system script as opposed to shaders on objects.
+
+If I were to attempt to create a similar effect, I would probably use a shader on several spheres which expand at different rates over time (to simulate the multiple "layers" of the explosion). The spheres would be mostly transparent but would be shaded with an effect somewhat similar to a reaction-diffusion system which would allow the shaded parts to change over time. The effect also seems to have small rays of light emanating from the center- this could be done with a screen shader or by shading a transparent plane which stays perpendicular to the player's view and is centered on the explosion.
+
+I found a pack with magic effects on the Unity Assets Store, but I still don't know how one would implement something like this:
+https://assetstore.unity.com/packages/vfx/particles/spells/magic-effects-pack-1-99856
+
+Here's an interesting intro to Unity particle systems, but it still doesn't really explain the effect I observed:
+https://www.raywenderlich.com/138-introduction-to-unity-particle-systems
